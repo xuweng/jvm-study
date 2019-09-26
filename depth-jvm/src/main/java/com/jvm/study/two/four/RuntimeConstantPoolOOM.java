@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * VM Args：-XX:PermSize=10M -XX:MaxPermSize=10M
+ * VM Args：-XX:MetaspaceSize=8M -XX:MaxMetaspaceSize=10M
  *
  * @author zzm
  */
