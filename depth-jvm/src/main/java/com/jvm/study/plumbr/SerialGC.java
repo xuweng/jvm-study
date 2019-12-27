@@ -14,6 +14,10 @@ package com.jvm.study.plumbr;
  * <p>
  * 同时对年轻代和老年代生效
  * <p>
+ * 查看gc日志。
+ * Minor GC(小型GC)只清理年轻代
+ * Full GC(完全GC)和 Minor GC 相比,最明显的区别是 —— 在此次GC事件中, 除了年轻代, 还清理了老年代和Metaspace.
+ * <p>
  * -XX:+UseSerialGC -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+PrintGCTimeStamps
  */
 public class SerialGC {
