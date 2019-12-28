@@ -12,6 +12,8 @@ package com.jvm.study.plumbr;
  * <p>
  * 并行垃圾收集器适用于多核服务器,主要目标是增加吞吐量。因为对系统资源的有效使用,能达到更高的吞吐量:
  * <p>
+ * Full GC表明本次清理的是年轻代和老年代
+ * <p>
  * -XX:ParallelGCThreads=NNN -XX:+UseParallelGC -XX:+UseParallelOldGC
  */
 public class ParallelGC {
