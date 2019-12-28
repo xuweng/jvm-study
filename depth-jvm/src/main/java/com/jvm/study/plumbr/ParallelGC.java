@@ -14,6 +14,11 @@ package com.jvm.study.plumbr;
  * <p>
  * Full GC表明本次清理的是年轻代和老年代
  * <p>
+ * 在GC事件中 Metaspace 里面没有回收任何对象。
+ * <p>
+ * 同样,Full GC和 Minor GC 的区别是很明显的 —— 在此次GC事件中, 除了年轻代, 还清理了老年代和 Metaspace
+ * Full GC清理整个堆
+ * <p>
  * -XX:ParallelGCThreads=NNN -XX:+UseParallelGC -XX:+UseParallelOldGC
  */
 public class ParallelGC {
