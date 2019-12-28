@@ -1,6 +1,8 @@
 package com.jvm.study.plumbr;
 
 /**
+ * 并行GC
+ * <p>
  * 并行垃圾收集器这一类组合,
  * 在年轻代使用 标记-复制(mark-copy)算法,
  * 在老年代使用 标记-清除-整理(mark-sweep-compact)算法。

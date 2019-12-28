@@ -1,6 +1,8 @@
 package com.jvm.study.plumbr;
 
 /**
+ * 串行GC
+ * <p>
  * https://github.com/cncounter/gc-handbook/blob/master/04_GC_Algorithms_Implementations.md
  * <p>
  * Serial GC 对年轻代使用 mark-copy(标记-复制) 算法,
