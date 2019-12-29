@@ -2,6 +2,9 @@ package com.jvm.study.plumbr;
 
 /**
  * https://github.com/cncounter/gc-handbook/blob/master/04_GC_Algorithms_Implementations.md
+ * https://www.tianxiaohui.com/index.php/Java%E7%9B%B8%E5%85%B3/%E5%85%B3%E4%BA%8E-JVM-%E5%9B%9E%E6%94%B6%E4%B8%AD-%E8%B7%A8%E4%BB%A3%E4%B9%8B%E9%97%B4%E7%9A%84%E5%BC%95%E7%94%A8-card-marking-dirty-card-write-barrier.html
+ * https://www.ibm.com/developerworks/library/j-jtp11253/index.html
+ * <p>
  * 持续学习。刻意练习。
  * <p>
  * 并发标记-清除
@@ -26,6 +29,14 @@ package com.jvm.study.plumbr;
  * <p>
  * gc日志。计算年轻代使用量，老年代使用量，堆总共使用量。
  * 学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。
+ * <p>
+ * 阶段 1: Initial Mark(初始标记). 这是第一次STW事件。 此阶段的目标是标记老年代中所有存活的对象,
+ * 包括 GC ROOR 的直接引用, 以及由年轻代中存活对象所引用的对象。 后者也非常重要, 因为老年代是独立进行回收的。
+ * <p>
+ * 阶段 2: Concurrent Mark(并发标记). 在此阶段, 垃圾收集器遍历老年代, 标记所有的存活对象,
+ * 从前一阶段 “Initial Mark” 找到的 root 根开始算起。
+ * 顾名思义, “并发标记”阶段, 就是与应用程序同时运行,不用暂停的阶段。
+ * 请注意, 并非所有老年代中存活的对象都在此阶段被标记, 因为在标记过程中对象的引用关系还在发生变化。
  */
 public class ConcMarkSweepGC {
 }
