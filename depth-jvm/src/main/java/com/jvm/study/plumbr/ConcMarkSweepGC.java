@@ -1,6 +1,9 @@
 package com.jvm.study.plumbr;
 
 /**
+ * https://github.com/cncounter/gc-handbook/blob/master/04_GC_Algorithms_Implementations.md
+ * 持续学习。刻意练习。
+ * <p>
  * 并发标记-清除
  * <p>
  * CMS的官方名称为 “Mostly Concurrent Mark and Sweep Garbage Collector”(主要并发-标记-清除-垃圾收集器).
@@ -18,6 +21,11 @@ package com.jvm.study.plumbr;
  * <p>
  * 运用线程与gc线程一起运行。gc线程占有cpu资源。运用线程的数量减少，吞吐量下降。
  * 能使用的运用线程越少，吞吐量越小。吞吐量和用户线程成正比。
+ * <p>
+ * gc日志。可以算出有 540,141K 的对象从年轻代提升到老年代。
+ * <p>
+ * gc日志。计算年轻代使用量，老年代使用量，堆总共使用量。
+ * 学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。学习看gc日志。
  */
 public class ConcMarkSweepGC {
 }
