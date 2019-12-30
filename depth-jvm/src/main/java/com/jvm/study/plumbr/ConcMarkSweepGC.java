@@ -6,6 +6,7 @@ package com.jvm.study.plumbr;
  * https://www.ibm.com/developerworks/library/j-jtp11253/index.html
  * <p>
  * 持续学习。刻意练习。
+ * 暴力--------》追求更加优秀的复杂度。O(n2)------->O(nlogn)。等等。不断超越，不断进步。追求卓越。
  * <p>
  * 并发标记-清除
  * <p>
